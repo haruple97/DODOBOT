@@ -135,13 +135,13 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
+                android:layout_height="52dp"
                 android:layout_margin="20dp"
-                android:lineSpacingExtra="7dp"
-                android:textColor="#000000"
                 android:fontFamily="@font/nexon_2"
-                android:text="아래처럼 길게 얘기하면 두두봇이 알아듣지 못할 수 있답니다"/>
+                android:lineSpacingExtra="7dp"
+                android:text="아래처럼 길게 얘기하면 두두봇이 알아듣지 못할 수 있답니다"
+                android:textColor="#000000"
+                android:textSize="17dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -266,6 +266,7 @@
 
         <!-- 챗봇 두두 버튼 -->
         <ImageButton
+            android:id="@+id/dodu_chat"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/dudu_headphone"
@@ -292,7 +293,7 @@
                 android:layout_height="20dp"
                 android:background="#00000000"
                 android:src="@drawable/more"
-                android:onClick="more_click"
+
                 />
             <TextView
                 android:layout_width="wrap_content"

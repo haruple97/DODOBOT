@@ -454,11 +454,11 @@ public class Chatbot_Activity extends AppCompatActivity {
     private class SayTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
-            streamPlayer.playStream(textToSpeech.synthesize(new SynthesizeOptions.Builder()
+            /*streamPlayer.playStream(textToSpeech.synthesize(new SynthesizeOptions.Builder()
                     .text(params[0])
                     .voice(SynthesizeOptions.Voice.EN_US_LISAVOICE)
                     .accept(HttpMediaType.AUDIO_WAV)
-                    .build()).execute().getResult());
+                    .build()).execute().getResult());*/
             return "Did synthesize";
         }
     }
