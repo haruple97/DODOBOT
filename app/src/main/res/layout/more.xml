@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <!-- 하단 고정 레이아웃 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+
+        <!-- 전체 세로 LinearLayout 시작 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 두두봇 타이틀 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/title" />
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/dudu_headphone" />
+                <!-- 두두봇 타이틀 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+
+            <!-- 개발자 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexon_2"
+                    android:text="개발자"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+
+                    />
+
+
+                <!-- 개발자 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe"
+                        android:text="대구대학교 멀티미디어공학전공 김동환"
+                        android:textSize="16dp"
+                        android:textColor="#202020"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe"
+                        android:text="대구대학교 멀티미디어공학전공 김정우"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#202020"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cafe"
+                        android:text="대구대학교 멀티미디어공학전공 김민경"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#202020"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 개발자 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexon_2"
+                    android:text="개발자 인사"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+
+                    />
+
+
+                <!-- 개발자 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cafe"
+                    android:lineSpacingExtra="7dp"
+                    android:text="안녕하세요, 두두봇 앱 개발자 JUSTICE 팀 입니다.
+저희는 신입생 분들이 수강신청이나 학사정보 확인을 어려워하는 점을 문제로 생각하였습니다. 그래서 인공지능 챗봇을 통하여 원하는 정보를 쉽게 얻을 수 있도록 '두두봇' 앱을 개발하게 되었습니다. 저희 애플리케이션은 사용자가 늘어날 수록 딥러닝 데이터의 증가로 인해 정확도가 더 높아지게 됩니다. 아래 메뉴 '개발자에 바란다' 에 불편사항이나 건의사항 남겨주시면 앞으로 지속적인 업데이트를 통해 더 좋은 애플리케이션으로 보답해드리겠습니다. 감사합니다."
+                    android:textSize="17dp"
+                    android:textColor="#202020"/>
+
+            </LinearLayout>
+
+
+            <!--자주묻는질문 FAQ 시작 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexon_2"
+                    android:text="자주묻는질문"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/dynalight"
+                    android:text="FAQ"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <!-- -자주묻는질문 FAQ  끝 -->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="뭐뭐가 있습니다. 일단 나중에 추가할래"
+                    android:fontFamily="@font/cafe"
+                    android:textColor="#202020"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/developer_icon"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexon_2"
+                    android:text="개발자에 바란다"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 전체 세로 레이아웃 끝 -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#0D000000">
+
+        <!-- Home 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#00000000"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="10dp"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                />
+
+
+        </LinearLayout>
+
+
+        <!-- 챗봇 두두 버튼 -->
+        <ImageButton
+            android:id="@+id/dodu_chat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/dudu_headphone"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            />
+
+        <!-- Home 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#00000000"
+                android:src="@drawable/more"
+                android:onClick="more_click"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더보기"
+                android:textSize="10dp"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

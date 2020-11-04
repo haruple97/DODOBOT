@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">두두봇</string>
+    <string name="what_s_on_your_mind">두두봇에게 궁금한 것을 질문해보세요!</string>
+    <string name="menu_refresh">Refresh</string>
+</resources>

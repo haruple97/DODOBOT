@@ -1,0 +1,2 @@
+rootProject.name='DODOBOT'
+include ':app'

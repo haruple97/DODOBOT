@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+//왓슨때매 넣은 것
+repositories {
+    maven {
+        url  "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+    }
+}
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "org.justice.dodobot"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true //왓슨때매 넣은 것
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //왓슨때매 넣은 것
+    lintOptions {
+        abortOnError false
+    }
+
+    // solve duplicate classes 왓슨때매 넣은 것
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'annotations'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+
+    //네이버 지도긴한데 옛날꺼?
+    implementation 'com.naver.maps.open:naver-map-ncp-api:2.1.7'
+
+    //네이버 지도 SDK
+    implementation 'com.naver.maps:map-sdk:3.10.0'
+
+    //네이버 지도 위치추적
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //firebase 리얼타임 데이터베이스 SDK
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+
+
+    //왓슨때매 넣은 것
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.ibm.watson:assistant:8.1.0'
+    implementation 'com.ibm.watson:text-to-speech:8.1.0'
+    implementation 'com.ibm.watson:speech-to-text:8.1.0'
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:multidex:1.0.1'
+
+    implementation ('com.github.bumptech.glide:glide:4.9.0') {
+        exclude group: "com.android.support"
+    }
+
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //뷰페이저2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-alpha01'
+
+}

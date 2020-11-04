@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9">
+
+                    <!-- 전체 세로 LinearLayout 시작 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <!-- 두두봇 타이틀 가로 레이아웃 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/title"
+                                />
+
+
+
+                            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dudu_headphone"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView_main"
+                 />
+
+
+
+
+            <!-- 1. 아이콘 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <!-- 챗봇이용방법 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/chatbot_way"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/chatbot_way" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이용방법"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+
+                <!-- 학교에 바란다 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/school_wish"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/school_wish" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="건의사항"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+                <!-- 교내 지도 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/call"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/call" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="교내전화"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+                <!-- 교내 지도 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/school_map"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="교내지도"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+                <!-- 아이콘 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+
+
+            <!-- 2. 아이콘 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="25dp">
+
+
+
+                <!-- 학사공지 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/bachelor_notice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bachelor_notice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="학사 공지"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+
+                <!-- 교내행사공지 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/event_notice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/event_notice"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="교내 행사"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+                <!-- 채용공고 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/recruitment_notice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/recruitment_notice"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="채용 공고"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+                <!-- 코로나 긴급공지 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/corona_notice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/corona_notice"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="코로나공지"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+                <!-- 아이콘 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+
+            <!-- 3. 아이콘 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+
+                <!-- 유튜브 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/youtube"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/youtube"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="유튜브"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+
+                <!-- 페이스북 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/facebook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/facebook"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="페이스북"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+
+
+                <!-- 블로그 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/blog"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/blog"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="블로그"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+
+                <!-- 인스타그램 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/instagram"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/instagram"
+                        android:scaleType="fitXY"
+                        android:background="#00000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인스타그램"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bm"/>
+                </LinearLayout>
+
+                <!-- 아이콘 가로 레이아웃 끝 -->
+            </LinearLayout>
+
+                        <!--학사일정 CalendarView -->
+                        <CalendarView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/calendarView"
+                            android:minDate="11/01/2020"
+                            android:maxDate="02/28/2021"
+                            />
+
+                        <TextView
+                            android:id="@+id/calendar_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/nexon"
+                            android:hint="날짜를 선택하면 학사일정을 확인할 수 있습니다"/>
+                        <TextView
+                            android:id="@+id/schedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/nexon_2"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/schedule_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/nexon_2"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginBottom="30dp"
+                            />
+
+            <!-- 전체 세로 레이아웃 끝 -->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <!-- 하단 고정 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#0D000000"
+        >
+
+        <!-- Home 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+
+            >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#00000000"
+                android:src="@drawable/home"
+                android:onClick="home_click"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="home"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+        <!-- 챗봇 두두 버튼 -->
+        <ImageButton
+            android:id="@+id/dodu_chat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/dudu_headphone"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            android:layout_gravity="center"
+
+            />
+
+        <!-- 더보기 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/more"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더보기"
+                android:textSize="10dp"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

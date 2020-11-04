@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- 전체 세로 LinearLayout 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="9"
+        >
+
+
+        <!-- 두두봇 타이틀 가로 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center"
+                android:src="@drawable/title"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/map"
+                android:padding="5dp"
+                />
+            <!-- 두두봇 타이틀 가로 레이아웃 끝 -->
+        </LinearLayout>
+
+
+        <!-- 네이버 지도 API -->
+        <fragment
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:name="com.naver.maps.map.MapFragment" />
+        <!-- 전체 세로 레이아웃 끝 -->
+    </LinearLayout>
+
+
+
+
+    <!-- 하단 고정 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#0D000000"
+        >
+
+        <!-- Home 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+
+            >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#00000000"
+                android:src="@drawable/home"
+                android:onClick="home_click"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="10dp"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                />
+
+        </LinearLayout>
+
+
+        <!-- 챗봇 두두 버튼 -->
+        <ImageButton
+            android:id="@+id/dodu_chat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/dudu_headphone"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            />
+
+        <!-- 더보기 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+
+
+            <Spinner
+                android:id="@+id/map_list_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/daegu_univ"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학교 건물 검색"
+                android:textSize="10dp"
+                android:fontFamily="@font/nexon_2"
+                android:textColor="#333333"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
