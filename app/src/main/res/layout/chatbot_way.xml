@@ -218,8 +218,72 @@
                 android:lineSpacingExtra="7dp"
                 android:textColor="#000000"
                 android:fontFamily="@font/nexon_2"
+
                 android:text="학교에 건의할 사항이 있다면 건의사항 게시판을 이용해주세요! 건의해주신 내용은 담당자선생님께서 매일 확인해주시고 요청이 처리될 수 있도록 도와주신답니다!"/>
 
+
+            <!-- 교내지도. 가로 레이아웃 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="교내지도"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/nexon_2"
+                    android:lineSpacingExtra="7dp"
+                    android:textColor="#202020"
+                    android:layout_gravity="center"
+                    />
+                <!-- 교내지도 레이아웃 끝 -->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_margin="20dp"
+                android:lineSpacingExtra="7dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/nexon_2"
+
+                android:text="교내 건물 위치 검색은 '교내지도' 메뉴를 이용해보세요! 각 단대부터 우체국, 올리브영, 미즈 등 학생들이 찾는 건물 정보를 표기해 두었습니다!"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_img_1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_img_2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_img_3"
+                android:layout_gravity="center"
+                />
 
 
 
@@ -262,6 +326,10 @@
                 android:textSize="10dp"/>
 
         </LinearLayout>
+
+
+
+
 
 
         <!-- 챗봇 두두 버튼 -->
