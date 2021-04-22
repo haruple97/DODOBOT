@@ -18,10 +18,15 @@ Daegu University AI Chatbot Application
 
 
 ## AI 챗봇
+<img src = "https://user-images.githubusercontent.com/73948775/115713788-5bd29b80-a3b1-11eb-90d6-25abef1e8913.gif" width="250px">
 
 
+- 사용 API : Watson Assistant
+- 챗봇의 캐릭터 명 : 두두봇
 
-
+Watson Assistant API를 사용하여 개발하였으며, 사용자가 질문시 두두봇이 답변해주는 챗봇 화면입니다.
+학교, 학사일정, 건물 위치 등을 왓슨에 등록하였으며 왓슨이 등록한 언어에 가깝다고 생각하면,
+등록한 답변을 출력해줍니다.
 
 
 
