@@ -26,4 +26,5 @@ public class IntroActivity extends Activity {
         super.onPause();
         finish();
     }
+
 }

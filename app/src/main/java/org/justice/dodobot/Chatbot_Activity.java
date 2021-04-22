@@ -83,15 +83,15 @@ public class Chatbot_Activity extends AppCompatActivity {
 
 
     private void createServices() {
-        watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator("rrHtA2dOPAjW6a1s7cVXAv79Px_cvaThfMbdjadXpR0R"));
-        watsonAssistant.setServiceUrl("https://api.kr-seo.assistant.watson.cloud.ibm.com/instances/15bcb0aa-0d71-4ecb-8cf2-20a00dc3b26b");
+        watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator(""));//본인 왓슨 어시스턴트 키
+        watsonAssistant.setServiceUrl(" "); //본인 왓슨 어시스턴트 Uri  작성
 
-        textToSpeech = new TextToSpeech(new IamAuthenticator("vzVP-vqHCULORXQvfeBi9bRczqCacA4hmzejvp3O1C5C"));
-        textToSpeech.setServiceUrl("https://api.kr-seo.text-to-speech.watson.cloud.ibm.com/instances/2e1980a9-ab2e-4db2-9714-3f11fb8bf3c3");
+        textToSpeech = new TextToSpeech(new IamAuthenticator(""));//본인 왓슨 어시스턴트 키
+        textToSpeech.setServiceUrl(""); //본인 왓슨 어시스턴트 Uri  작성
 
 
-       speechService = new SpeechToText(new IamAuthenticator("EYKPRcDE1v6Sn-ZmLQK0YZHTNH2HJNsnamLl1lahiT8p"));
-       speechService.setServiceUrl("https://api.kr-seo.speech-to-text.watson.cloud.ibm.com/instances/7e86c1d9-96fa-47f8-9abd-ec2c7a16a4ec");
+       speechService = new SpeechToText(new IamAuthenticator(""));//본인 왓슨 어시스턴트 키
+       speechService.setServiceUrl(""); //본인 왓슨 어시스턴트 Uri  작성
     }
 
 
@@ -281,7 +281,7 @@ public class Chatbot_Activity extends AppCompatActivity {
                             .text(inputmessage)
                             .build();
                     MessageOptions options = new MessageOptions.Builder()
-                            .assistantId("d0b9ff84-049f-4759-a85f-f20658e49afe")
+                            .assistantId("") // 본인 assistantId
                             .input(input)
                             .sessionId(watsonAssistantSession.getResult().getSessionId())
                             .build();

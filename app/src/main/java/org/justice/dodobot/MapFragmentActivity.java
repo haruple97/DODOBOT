@@ -82,8 +82,6 @@ public class MapFragmentActivity extends AppCompatActivity implements OnMapReady
     private InfoWindow infoWindow3 = new InfoWindow();
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
 

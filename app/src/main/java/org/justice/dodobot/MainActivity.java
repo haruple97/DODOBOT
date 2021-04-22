@@ -35,22 +35,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
-
-
     //리사이클러뷰 쓰기 위한 코드
         this.InitializeData();
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerView_main);
 
-        //이 부분 수정해서 가로 리사이클러뷰로 만들수있다!!!
+        //이 부분 수정해서 가로 리사이클러뷰
         LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(manager); // LayoutManager 등록
         recyclerView.setAdapter(new MyAdapter(dataList));  // Adapter 등록
 
-    //리사이클러뷰 쓰기 위한 코드 끝
-
+        //리사이클러뷰 쓰기 위한 코드 끝
 
         //두두챗봇 버튼 눌렀을 때 두두챗봇 화면으로 이동
         ImageButton dodu_chat = (ImageButton) findViewById(R.id.dodu_chat);
@@ -61,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         //더보기 버튼 눌렀을 때 더보기 화면으로 이동
         ImageView More_Button = (ImageView) findViewById(R.id.more);
@@ -756,8 +749,6 @@ public class MainActivity extends AppCompatActivity {
         dataList.add(new Titleimg(R.drawable.card_7));
 
     }
-
-
 
 
     //--------------------리사이클러뷰 끝!!!------------------------------------
